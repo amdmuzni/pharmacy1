@@ -1,0 +1,314 @@
+.mainhead {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+/*header design*/
+header {
+    background-color: #ef233c;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: 10px; 
+    align-items:center; 
+    color: whitesmoke;
+}
+/* nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+li a:hover {
+    background-color:grey;
+}
+body{
+    background-color: #ced4da;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+/* body text align*/
+.introduction {
+text-align: center;
+font-size: 40px;
+color: #7f5539;
+font-family: 'Times New Roman', Times, serif;
+}
+.phase1{
+font-size: 20px;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px;
+color: #6c757d;
+}
+.phase2 {
+font-size: 20px;
+text-align: justify;
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px;
+color: #6c757d;
+}
+/* available products*/
+.flexcontainer {
+    display: flex;
+}
+  
+.flexcontainer > div {
+    background-color: #01110a;
+    color: white;
+    width: 2000px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+/* product section */
+/* adding box for product & checkout page*/
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section h3 {
+    color: #0073e6;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+/* arranging the box to the left */
+.medicine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.medicine label {
+    flex: 2;
+    font-size: 1.1rem;
+}
+/* box design */
+.medicine input[type="number"] {
+    flex: 1;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+/* box outline when enter quantity*/
+.medicine input[type="number"]:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+/* product page responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        width: 95%;
+    }
+    .medicine {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .medicine label {
+        margin-bottom: 5px;
+    }
+    .flexcontainer {
+        flex-direction: column;
+    }
+    .flexcontainer > div {
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    .mainhead {
+        width: 100%;
+    } 
+}
+.checkout.page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.cp h2 {
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+.orderinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.orderinfo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.orderinfo input[type="text"],
+.orderinfo input[type="email"],
+.orderinfo input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.orderinfo input[type="checkbox"] {
+    margin-right: 10px;
+}
+.submit {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.submit input[type="submit"],
+.submit input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit input[type="reset"] {
+    background-color: #ccc;
+    color: black;
+}
+.submit input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+.submit input[type="reset"]:hover {
+    background-color: #999;
+}
+.button-group {
+    margin-top: 20px; 
+    text-align: center; 
+}
+/* btn alignment in product page */
+.btn {
+    padding: 10px 20px; 
+    font-size: 20px; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin: 20px; 
+}
+/* Button Colors */
+.btn.favourite {
+    background-color: #ff5733; 
+}
+
+.btn.apply-favourite {
+    background-color: #5bc0de; 
+}
+
+.btn.buy-now {
+    background-color: #28a745; 
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    opacity: 0.9; 
+}
+
+/*Click Effect for Buttons */
+.btn:active {
+    transform: scale(0.95); 
+    opacity: 0.8; 
+}
+/* footer styling */
+Footer {
+    background-color: #343a40;
+    color: #f8f9fa; 
+    padding: 20px 0; 
+    font-size: 0.9rem; 
+    flex: 1; 
+    min-width: 200px; 
+}
+.footer-bottom {
+    text-align: center; 
+    margin-top: 20px; 
+    border-top: 1px solid #495057; 
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #adb5bd; 
+}
+/* order table*/
+#order-summary {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#order-table th, #order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#order-table th {
+    background-color: #0288d1;
+    color: white;
+}
+
+#total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+/* responsive design for the home page */
+/*@media screen and (max-width: 768px) {
+    .flexcontainer {
+        flex-direction: column;
+    }
+    .flexcontainer > div {
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 768px) {
+    .image {
+        width: 100%;
+    }
+}*/
+
+

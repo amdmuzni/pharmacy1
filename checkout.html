@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./checkout.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="mainhead">Welcome to Union Chemist</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <section class="checkout page">
+        <div class="cp">
+         <h2 class="customer">Customer Information</h2>
+         <form action="#">
+             <div class="orderinfo">
+                 <div class="ci">
+                     <label for="Full Name">Full Name:</label>
+                     <input type="text" class="Full Name" placeholder="Kevin krish" required>
+                 </div> 
+                 <div class="mail">
+                     <label for="email address">E-mail Address:</label>
+                     <input type="email" class="email" placeholder="ABC@gmail.com" required>
+                 </div>
+                 <div class="phno">
+                     <label for="p.no">Phone number:</label> 
+                     <input type="number" class="num" placeholder="0XX-XXX-XXXX" required>
+                 </div>
+                 <div class="da">
+                     <label for="Delivery address">Delivery Address:</label>
+                     <input type="text" class="dadd" placeholder="No. 388 Union Pl, Colombo 02" required>
+                 <h2 class="customer">Payment Information</h2>
+                 <div class="ci">
+                     <input type="checkbox" class="pay" name="payment" value="Payment Options">
+                     <label for="html">Cash On Delivery</label>
+                 </div>
+                 <div class="ci">
+                     <input type="checkbox" class="pay" name="payment" value="Payment Option">
+                     <label for="html">Online Payment</label>                
+                 </div>
+                 <div class="ci">
+                     <input type="checkbox" class="pay" name="payment" value="Payment Option">
+                     <label for="html">Buy now Pay later</label>                
+                 </div>
+                 </div>
+                 <div class="submit">
+                     <input type="reset"> 
+                     <input type="submit" value="Pay">
+                 </div>
+                 </div>
+             </div>
+         </form>
+        </div>
+     </section>
+     <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: info@unionchemist.com</p>
+            <p>Phone: +94 11 123 4567</p>
+            <p>Address: No. 388, Union Pl, Colombo 02, Sri Lanka</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Union Chemist. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
